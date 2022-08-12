@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <script src="https://kit.fontawesome.com/c1b2df2f43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="top-menu">
+      <a href="./index.html">
+        <div class="logo">
+          <i class="fa-solid fa-person-rifle"></i>
+          <div class="title">
+            <div class="main-title">EterInfo</div>
+            <div class="sub-title">이터널시티의 모든정보</div>
+          </div>
+        </div>
+      </a>
+      <div class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="bottom-menu">
+      <ul>
+        <li class="menu-item"><a href="./itemdb.html">아이템DB</a></li>
+        <li class="menu-item"><a href="./frienddb.html"></a>용병DB</li>
+        <li class="menu-item"><a href="./skilldb.html"></a>스킬DB</li>
+        <li class="menu-item"><a href="./monsterdb.html"></a>몬스터DB</li>
+        <li class="menu-item"><a href="./guide.html"></a>가이드</li>
+        <li class="menu-item"><a href="./simulation.html"></a>시뮬레이션</li>
+        <li class="menu-item"><a href="./comunity.html"></a>커뮤니티</li>
+      </ul>
+    </div>
+    <div class="gradient"></div>
+  </header>
+  <section class="main-contents">
+    <h1>아이템DB</h1>
+    <div class="itemkind">
+      <ul>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio1">
+          <label for="itemkind_radio1">
+            <span>
+              <i class="fa-solid fa-gun"></i>
+              <div>원거리무기</div>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio2">
+          <label for="itemkind_radio2">
+            <span>
+              <i class="fa-solid fa-gavel"></i>
+              <div>근접무기</div>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio3">
+          <label for="itemkind_radio3">
+            <span>
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>방패</div>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio4">
+          <label for="itemkind_radio4">
+            <span>
+              <i class="fa-solid fa-shirt"></i>
+              <div>방어구</div>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio5">
+          <label for="itemkind_radio5">
+            <span>
+              <i class="fa-solid fa-ring"></i>
+              <div>악세서리</div>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input type="radio" name="itemkind" id="itemkind_radio6">
+          <label for="itemkind_radio6">
+            <span>
+              <i class="fa-solid fa-dragon"></i>
+              <div>코스튬날개</div>
+            </span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <h2>
+      <i class="fa-solid fa-filter"></i>
+      <span>Show Filters</span>
+    </h2>
+
+    <div class="filter-view">
+      <ul>
+        <li>
+          <input type="checkbox" id="filter_check11">
+          <label for="filter_check11"><span>CL</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check12">
+          <label for="filter_check12"><span>NonCL</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check13">
+          <label for="filter_check13"><span>합법</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check14">
+          <label for="filter_check14"><span>불법</span></label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <input type="checkbox" id="filter_check21">
+          <label for="filter_check21"><span>저격소총</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check22">
+          <label for="filter_check22"><span>돌격소총</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check23">
+          <label for="filter_check23"><span>기관총</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check24">
+          <label for="filter_check24"><span>중화기</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check25">
+          <label for="filter_check25"><span>지원화기</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check26">
+          <label for="filter_check26"><span>샷건</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check27">
+          <label for="filter_check27"><span>권총</span></label>
+        </li>
+        <li>
+          <input type="checkbox" id="filter_check28">
+          <label for="filter_check28"><span>특수화기</span></label>
+        </li>
+      </ul>
+    </div>
+
+    <h2><span>6 Items</span></h2>
+
+    <div class="filter-desc">
+      #9등급#CL#합법#돌격소총 
+    </div>
+
+    <ul class="item-list">
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+      <li>
+        <span><img src="http://image.mgame.com/mgamezzang/games/eternalcity_cms/attack/337.gif"/></span>
+        <span class="option">
+          <div class="option-title">[CL] H&K XM8</div>  
+          <div>
+            <span class="option-dmg">7,982</span>
+            <span class="option-sm">소형 300/1분</span>
+          </div>
+        </span>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
