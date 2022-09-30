@@ -5,17 +5,14 @@ const bodyParser = require('koa-bodyparser');
 const serve = require('koa-static');
 const path = require('path');
 
-const mariadb = require('mariadb/callback');
-//내부모듈
-// const api = require('./src/api');
-//모듈내 선언
 const app = new Koa();
 const router = new Router();
+const api = require('./src/api');
+const ssr = require('./ssr');
 
-//DB연결
-const conn = mariadb.createConnection({
-  host: 'database-1.cxkp8isbbc1o.ap-northeast-2.rds.amazonaws.com', 
-  user:'eterinfo_admin', password: 'etermin!1423'
+app.use((ctx, next) => {
+  if(ctx.path === '/') return ssr(ctx);
+  return next();
 });
 
 //미들웨어설정
@@ -23,12 +20,12 @@ app.use(serve(path.resolve(__dirname, './views/build')));
 app.use(serve(path.resolve(__dirname, './public')));
 // 라우터 적용 전에 bodyParser 적용
 app.use(bodyParser());
-// app.use('/api', api);
 
-//서버(웹,DB) 연결
-conn.connect(err => {
-  if (err) console.log("not connected due to error: " + err);
-});
+// 라우터 설정
+app.use(router.routes()).use(router.allowedMethods());
+app.use(ssr);
+
+router.use('/api', api.routes()); // api 라우트 적용
 
 app.listen(8002, () => {
   console.log('listening to port 8002');

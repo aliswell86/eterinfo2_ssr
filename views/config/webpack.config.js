@@ -507,18 +507,18 @@ module.exports = function (webpackEnv) {
             {
               test: sassRegex,
               exclude: sassModuleRegex,
-              // use: getStyleLoaders(
-              //   {
-              //     importLoaders: 3,
-              //     sourceMap: isEnvProduction
-              //       ? shouldUseSourceMap
-              //       : isEnvDevelopment,
-              //     modules: {
-              //       mode: 'icss',
-              //     },
-              //   },
-              //   'sass-loader'
-              // ),
+              use: getStyleLoaders(
+                {
+                  importLoaders: 3,
+                  sourceMap: isEnvProduction
+                    ? shouldUseSourceMap
+                    : isEnvDevelopment,
+                  modules: {
+                    mode: 'icss',
+                  },
+                },
+                'sass-loader'
+              ),
               use: getStyleLoaders({
                 importLoaders: 2,
                 sourceMap: isEnvProduction && shouldUseSourceMap

@@ -1,11 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon:400');
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung:400');
+
+:root {
+  --padding-px-1:1px;
+  --padding-px-2:2px;
+  --padding-px-4:4px;
+  --padding-px-10:10px;
+
+  --oc-red-10 : #990000;
+  --oc-red-11 : #800000;
+  --oc-red-12 : #660000;
+
+  --btn-transition-duration: 0.14s;
+  --btn-border-radius-1: 4em;
+
+  --item-ctrl-batang : rgb(0, 36, 74);
+  --item-ctrl-title : rgb(255, 255, 255);
+  --item-ctrl-subtxt : rgb(220, 220, 220);
+  --item-ctrl-hands : rgb(0, 203, 198);
+  --item-ctrl-dmg : rgb(255, 97, 57);
+  --item-ctrl-cri : rgb(255, 203, 0);
+  --item-ctrl-point : rgb(231, 109, 0);
+  --item-ctrl-spd : rgb(198, 121, 198);
+  --item-ctrl-weight : rgb(148, 150, 0);
+  --item-ctrl-count : rgb(0, 203, 231);
+  --item-ctrl-tanchang : rgb(57, 243, 82);
+  --item-ctrl-grade0 : rgb(57, 243, 82);
+  --item-ctrl-grade1 : rgb(57, 243, 82);
+  --item-ctrl-grade2 : rgb(57, 243, 82);
+  --item-ctrl-grade3 : rgb(198, 0, 148);
+  --item-ctrl-grade4 : rgb(57, 243, 82);
+  --item-ctrl-grade5 : rgb(57, 243, 82);
+  --item-ctrl-grade6 : rgb(57, 243, 82);
+}
+
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif !important;
+  // font-family: "Noto Sans KR", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.65);
+  // font-size: 14px;
+  // color: rgba(0, 0, 0, 0.65);
 }
 
 // box-sizing 일괄 설정
@@ -17,4 +54,45 @@ body {
 a {
   text-decoration: inherit;
   color: inherit;
+}
+
+section {
+  font-family: 'Noto Serif KR', serif;
+  font-family: 'Open Sans', sans-serif;
+  height:120%;
+  padding: 0px 4px 0px 4px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}
+
+.h1-title {
+  text-align: center;
+  margin: 20px 0px 25px 0px;
+  color: var(--oc-gray-9);
+  font-weight: 400;
+  font-family: Do Hyeon;
+  font-size: 1.2em;
+}
+
+h2 {
+  margin: 20px 0px 10px 0px;  
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Do Hyeon;
+}
+
+h2:hover {
+  color: var(--oc-gray-8);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }

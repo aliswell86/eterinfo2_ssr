@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Routes, Route} from 'react-router-dom';
 import {
-  SamplePage
+  SamplePage, ItemsPage
 } from 'pages';
 // import { Helmet } from "react-helmet";
 
@@ -24,6 +24,7 @@ class App extends Component {
         {/* <Route path="/" component={logPageView} /> */}
         <Routes>
           <Route path="/" element={<SamplePage/>} />
+          <Route path="/wp" element={<ItemsPage/>} />
         </Routes>
       </div>
     );

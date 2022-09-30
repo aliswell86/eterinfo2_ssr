@@ -1,0 +1,72 @@
+@import 'utils';
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: $oc-gray-0;
+
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    .logo {
+      display: flex;
+      align-items:center;
+      padding: var(--padding-px-4);
+
+      i {
+        color:$oc-gray-9;
+        font-size:24px;
+        padding:var(--padding-px-4);
+      }
+
+      .title {
+        color: $oc-gray-9;
+        font-family: 'Do Hyeon';
+        font-weight: bolder;
+        margin-left: 10px;
+        font-size:32px;
+
+        .sub-title {
+          color: black;
+          font-size:12px;
+          font-family: 'Yeon Sung';
+          margin: -6px 0px 0px 8px;
+          
+        }
+      }
+    }
+
+    .menu {
+      padding: var(--padding-px-4);
+      padding-right: 10px;
+      font-size:24px;
+      color: $oc-gray-8;
+    }
+  }
+
+  .bottom-menu {
+    font-size: 9px;
+    background-color:var(--oc-red-11);
+    padding: var(--padding-px-10);
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+
+      li a:hover {
+        border-bottom: 2px solid white;
+        padding-bottom: var(--padding-px-2);
+      }
+    }
+  }
+
+  .gradient {
+    height: 6px;
+    background: linear-gradient(to bottom, var(--oc-red-11), $oc-gray-0);
+  }
+}
