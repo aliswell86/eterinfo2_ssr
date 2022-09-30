@@ -1,11 +1,9 @@
 # 운영은 views/build 만 반영
-/config
 /node_modules
-/public
-/scripts
-/src
-package.json
 
-#개발은 모두반영 /node_modules 빼고..
-/node_modules
-# /package-lock.json
+/views/config
+/views/node_modules
+/views/scripts
+/views/scr
+/views/package.json
+/views/.yarn.lock
